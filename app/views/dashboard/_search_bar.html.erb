@@ -1,0 +1,6 @@
+<%= form_tag "search" do %>
+  <%= text_field_tag "search_bar", "yellow flowers" %>
+  <%= submit_tag "search" %>
+
+  <%= p @search_results %>
+<% end %>

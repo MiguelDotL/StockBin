@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   root 'page#index'
 
   get 'search', to: 'dashboard#search'
+  post 'search', to: 'dashboard#search_handler'
+
+  get 'show-results', to: 'dashboard#show_results'
 
   # root 'static#welcome'
   # get 'static/welcome'
