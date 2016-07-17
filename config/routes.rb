@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'page/index'
   root 'page#index'
 
+  get 'search', to: 'dashboard#search'
+
   # root 'static#welcome'
   # get 'static/welcome'
 
