@@ -1,3 +1,56 @@
 // Place all the styles related to the Dashbord controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.clean-list {
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul#resultImages {
+  display: block;
+  text-align: center;
+  margin: 3rem 3% 6.4rem 3%;
+}
+
+ul#resultImages > li {
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+
+  // height: 8rem;
+  // width: 12rem;
+}
+
+ul#resultImages > li > img {
+  // display: inline;
+  position: relative;
+  // top: -4.5rem;
+  // left: -3.3rem;
+  min-height: 100%;
+  min-width: 25rem;
+
+  width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+  //
+  // height: auto;
+  // width: 125%;
+}
+
+.image-frame {
+  border: none;
+  height: 10rem;
+  width: 16rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}

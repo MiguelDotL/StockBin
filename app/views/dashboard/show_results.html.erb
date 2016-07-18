@@ -1,8 +1,9 @@
 <%= render 'search_bar' %>
 
-
-<ul id="resultImages">
-  <% @search_results.each do | img_url |%>
-    <li class="images"><img src="<%= img_url %>" alt=""></li>
-  <% end %>
-</ul>
+<div class="wrapper">
+  <ul id="resultImages" class="clean-list">
+    <% @search_results.each do | img_url |%>
+      <li class="images image-frame"><img src="<%= img_url %>" alt=""></li>
+    <% end %>
+  </ul>
+</div>
