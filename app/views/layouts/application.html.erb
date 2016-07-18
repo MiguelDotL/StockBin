@@ -13,11 +13,16 @@
 
       <% if current_user %>
         Signed in as  <%= current_user.email %>
-        <%= link_to "Log Out", logout_path %>
+        <%= link_to "Sign Out", logout_path %>
       <% else %>
         <%= link_to "Sign Up", signup_path %> or
         <%= link_to "Sign In", signin_path %>
       <% end %>
+
+      <!-- <% unless current_page?(root_path) %>
+        <%= render 'search_bar' %>
+      <% end %> -->
+
     </div>
 
     <% flash.each do | key, value | %>
