@@ -1,6 +1,8 @@
 <div id="searchBar">
-  <%= form_tag "search" do %>
-    <%= text_field_tag "search_bar" %>
-    <%= submit_tag "search" %>
+  <%= form_tag "search", :class => "search-container" do %>
+    <%= text_field_tag "search_bar", nil, placeholder: "What are you looking for?" %>
+    <%= button_tag(type: 'submit') do %>
+      <%= content_tag(:i, nil, :class => "fa fa-search search-icon" ) %>
+    <% end %>
   <% end %>
 </div>
