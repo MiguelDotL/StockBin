@@ -1,3 +1,4 @@
+// --------------------------------HEADER--------------------------------
 h1,
 h2 {
   color: #FFF;
@@ -15,6 +16,10 @@ h2 {
   font-size: 6em;
   padding: .7em .5em .3em .5em
 }
+#header h2 {
+  font-size: 4em;
+  padding: 2.4rem 1rem 0rem 2rem;
+}
 
 #header h1,
 #header h2 {
@@ -27,10 +32,24 @@ h2 {
 #header > h2 > span {
   font-weight: 400;
 }
+#name > h1 > a,
+#name > h2 > a {
+  color: #FFF;
+  text-decoration: none;
+
+}
 
 #name {
   float: left;
 }
+
+#topSearchBar {
+  float: left;
+  padding: 1.5rem 1rem 0rem 1rem;
+  width: 20rem;
+
+}
+
 
 #user {
   float:right;
@@ -38,7 +57,7 @@ h2 {
 }
 
 #user span {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #FFF;
@@ -53,7 +72,7 @@ h2 {
 #user a {
   color: #FFF;
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 500;
   text-decoration: none;
   &:hover {
@@ -86,12 +105,16 @@ h2 {
 #searchBarBox {
   width: 50%;
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 10em 0;
   text-align: center;
 }
 #searchBarBox > h1 {
-  // font-family:
-  font-size: 4em;
+  // font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  // font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  // font-family: "Montserrat", sans-serif;
+  font-size: 6em;
   margin: 0 0 1em 0;
   // margin: 8em auto;
   text-align: center;
@@ -137,7 +160,7 @@ h2 {
 .search-container{
   // width: 490px;
   display: block;
-  // margin: 0 auto;
+
 }
 
 button {
@@ -148,12 +171,13 @@ button {
   right: -10px;
   top: -55px;
   outline: none;
+  cursor:pointer;
 }
 .search-button {
   border: none;
   background: none;
-  width: 75px;
-  height: 75px;
+  // width: 2rem;
+  // height: 2rem;
   top: -32px;
 }
 
@@ -161,8 +185,8 @@ button {
   font-size: 4em;
   position: relative;
   float: right;
-  width: 75px;
-  height: 75px;
+  width: 4rem;
+  height: 4rem;
   top: 1.2rem;
   // right: 0px;
 }

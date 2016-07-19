@@ -13,18 +13,20 @@
   text-decoration: none;
 }
 
-// .wrapper {
-//   // width: 900px;
-//   font-size: 1.6em;
-//   margin: 0 auto;
-// }
+.results-wrapper {
+  // width: 900px;
+  // font-size: 1.6em;
+  // margin: 0 auto;
+  background: #EEE;
+}
 
 // --------------------------------SEARH-RESULTS--------------------------------
 
 ul#resultImages {
   display: block;
   text-align: center;
-  margin: 3rem 3% 6.4rem 3%;
+  margin: 0rem 3% 6.4rem 3%;
+  padding-top: 6rem;
 }
 
 ul#resultImages > li {
@@ -37,7 +39,7 @@ ul#resultImages > li {
 }
 
 ul#resultImages > li > img {
-  // display: inline;
+  display: inline;
   position: relative;
   // top: -4.5rem;
   // left: -3.3rem;
