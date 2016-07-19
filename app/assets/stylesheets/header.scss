@@ -25,7 +25,8 @@ h2 {
 #header h2 {
   // font-family: "Open Sans Condensed", sans-serif;
   // font-family: "Oswald", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
+  // font-family: "Roboto Condensed", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-weight: 300;
 }
 #header > h1 > span,
@@ -47,9 +48,7 @@ h2 {
   float: left;
   padding: 1.5rem 1rem 0rem 1rem;
   width: 20rem;
-
 }
-
 
 #user {
   float:right;
@@ -61,7 +60,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #FFF;
-
 }
 
 #user li {
@@ -109,11 +107,11 @@ h2 {
   text-align: center;
 }
 #searchBarBox > h1 {
-  // font-family: "Roboto", sans-serif;
   font-weight: 300;
-  // font-family: "Open Sans Condensed", sans-serif;
-  font-family: "Open Sans", sans-serif;
   // font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  // font-family: "Open Sans Condensed", sans-serif;
+  // font-family: "Roboto Condensed", sans-serif;
   font-size: 6em;
   margin: 0 0 1em 0;
   // margin: 8em auto;
