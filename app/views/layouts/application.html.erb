@@ -5,11 +5,34 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<!-- Google-Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700'
+          rel='stylesheet' type='text/css'>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div id="user_header">
+    <header id="header">
+
+
+      <% if current_page?(root_path) %>
+        <h1 id="name">Search<span>Bin</span></h1>
+        <% else %>
+        <h2 id="name">Search<span>Bin</span></h2>
+      <% end %>
+
+      <% unless current_page?(root_path) %>
+        <%= render :partial => 'dashboard/search_bar' %>
+      <% end %>
 
       <% if current_user %>
         Signed in as  <%= current_user.email %>
@@ -18,12 +41,7 @@
         <%= link_to "Sign Up", signup_path %> or
         <%= link_to "Sign In", signin_path %>
       <% end %>
-
-      <!-- <% unless current_page?(root_path) %>
-        <%= render 'search_bar' %>
-      <% end %> -->
-
-    </div>
+    </header>
 
     <% flash.each do | key, value | %>
       <%= content_tag(:div, class: "alert alert-#{key}") do %>
@@ -34,6 +52,11 @@
     <% end %>
 
     <%= yield %>
+
+
+    <footer>
+      <!-- content here -->
+    </footer>
   </body>
 
 </html>

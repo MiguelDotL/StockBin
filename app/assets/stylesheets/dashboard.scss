@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 * {
-
   margin: 0 0;
   padding: 0 0;
 }
@@ -13,6 +12,14 @@
   list-style: none;
   text-decoration: none;
 }
+
+.wrapper {
+  width: 900px;
+  font-size: 1.6em;
+  margin: 0 auto;
+}
+
+// --------------------------------SEARH-RESULTS--------------------------------
 
 ul#resultImages {
   display: block;
