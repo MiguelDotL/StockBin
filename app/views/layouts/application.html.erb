@@ -22,25 +22,31 @@
 
   <body>
     <header id="header">
+      <div id="name">
+        <% if current_page?(root_path) %>
+          <h1>Search<span>Bin</span></h1>
+          <% else %>
+          <h2>Search<span>Bin</span></h2>        <% end %>
+      </div>
 
+      <div id="searchBarBox">
+        <% unless current_page?(root_path) %>
+          <%= render :partial => 'dashboard/search_bar' %>
+        <% end %>
+      </div>
 
-      <% if current_page?(root_path) %>
-        <h1 id="name">Search<span>Bin</span></h1>
-        <% else %>
-        <h2 id="name">Search<span>Bin</span></h2>
-      <% end %>
-
-      <% unless current_page?(root_path) %>
-        <%= render :partial => 'dashboard/search_bar' %>
-      <% end %>
-
-      <% if current_user %>
-        Signed in as  <%= current_user.email %>
-        <%= link_to "Sign Out", logout_path %>
-      <% else %>
-        <%= link_to "Sign Up", signup_path %> or
-        <%= link_to "Sign In", signin_path %>
-      <% end %>
+      <nav id="user">
+        <ul class="clean-list">
+          <% if current_user %>
+            Signed in as  <%= current_user.email %>
+            <li><%= link_to "Sign Out", logout_path %></li>
+          <% else %>
+            <li><%= link_to "Sign Up", signup_path %></li>
+            <li><span>or</span></li>
+            <li><%= link_to "Sign In", signin_path %></li>
+          <% end %>
+        </ul>
+      </nav>
     </header>
 
     <% flash.each do | key, value | %>
@@ -53,9 +59,8 @@
 
     <%= yield %>
 
-
     <footer>
-      <!-- content here -->
+      <p>&copy; <%= Time.now.year%>, Sumware, BFE&nbsp;&nbsp;|&nbsp;&nbsp;<span>SearchBin</span> </p>
     </footer>
   </body>
 

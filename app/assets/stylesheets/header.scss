@@ -8,17 +8,16 @@ h2 {
   // background: #1669bf;
   // background: #2E86AB;
   background: #0496ff;
-
   height: 6rem;
 }
 
-#header > h1 {
+#header h1 {
   font-size: 6em;
   padding: .7em .5em .3em .5em
 }
 
-#header > h1,
-#header > h2 {
+#header h1,
+#header h2 {
   // font-family: "Open Sans Condensed", sans-serif;
   // font-family: "Oswald", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
@@ -29,14 +28,36 @@ h2 {
   font-weight: 400;
 }
 
-#header > a {
-  color: #FFF;
-  font-size: 2em;
-  font-weight: bold;
-  text-decoration: none;
-  padding: .7em .5em .3em .5em;
-  &:hover {
+#name {
+  float: left;
+}
 
+#user {
+  float:right;
+  padding: 3rem 2rem 2rem 3rem;
+}
+
+#user span {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+
+}
+
+#user li {
+  display: inline;
+  padding: .7em .5em .3em .5em;
+}
+
+#user a {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+    background: none;
   }
   &:active {
 
@@ -46,14 +67,42 @@ h2 {
   }
 }
 
+
+// --------------------------------HERO--------------------------------
+
 #hero {
   background-image: url(hero.jpg);
   background-attachment:scroll;
   background-position: center;
   background-size: cover;
   height: 30rem;
+  text-align: center;
 }
 
-#hero > h1 {
-  font-size: 3em;
+
+
+// ----------------Search-Box----------------
+
+#searchBarBox > h1 {
+  font-size: 4em;
+  // margin: 8em auto;
+  text-align: center;
+
+}
+
+
+// --------------------------------FOOTER--------------------------------
+
+footer {
+  background: #222;
+  height: 6rem;
+}
+
+footer p {
+  color: #CCC;
+  padding: 3em 2em 1em 2em;
+}
+footer p span {
+  color: #FFF;
+  font-weight: bold;
 }
